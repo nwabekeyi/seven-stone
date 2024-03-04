@@ -1,0 +1,16 @@
+#body-container{
+    display: flex;
+    width: 300vw !important;
+}
+@media screen and (max-width: 768px) {
+    #body-container {
+      display:block;
+      width: 100vw !important;
+      height: 2000px;
+      
+    }
+    .no-show{
+        display: none;
+    }
+    
+    }

@@ -1,0 +1,314 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide{
+    flex-direction: column;
+    margin: 5px 30px auto 5px;
+    width: 100%!important;
+    height: 300px !important;
+    
+  
+  }
+  .product{
+    height: 1000px !important;
+  }
+  .product-carousel{
+    margin: 5px auto auto auto;
+    height: 10px !important;
+
+  }
+  .carousel-slider{
+    margin: 5px 30px auto 5px  !important;
+    width: 100% !important;
+    object-fit: cover;
+
+  }
+  .control-arrow{
+    display: none;
+  }
+  .thumb{
+    height: 50px;
+  }
+
+  .carousel{
+    flex-direction: column;
+    /* margin: 5px auto auto 20px; */
+    width: 85% !important;
+    height: 300px !important;
+  
+  }
+  .carousel-root{
+    flex-direction: column;
+    padding-left: 25px;
+    /* margin: 5px auto auto auto; */
+    width: 95vw !important;
+    height: 300px !important;
+  
+  }
+  .product {
+    display:flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: auto;
+    animation: slideInFromLeft 5s ease forwards;
+  
+  }
+  .product-details {
+    display: block;
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    margin-right: 30px;
+    height: 500px;
+  }
+  .banners{
+    display:flex; 
+    flex-direction: column; 
+    width:80vw !important; 
+    padding: 5px;
+    margin-top: 320px !important;
+
+  }
+  .banner-images{
+    width: 83vw !important;
+    height: auto !important;
+    border-radius: 10px;
+    margin: 10px 50px 0 -7px; 
+
+  
+  }
+  .video-title{
+    margin: 350px -5px 5px 25px;
+  }
+  
+    .home{
+      animation: fadeIn 5s ease forwards;
+      
+      
+    }
+    .order-details {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: white; 
+      margin-left: 30px;
+      height: 630px;
+      margin-top: 95px;
+      padding: 20px;
+      display: none;
+    }
+
+  }
+
+.home{
+  animation: fadeIn 5s ease forwards;
+  
+}
+.product {
+  display: flex;
+  width: 95vw;
+  height: 1250px;
+  gap: 2px;
+  justify-content: flex-start;
+  margin: auto;
+  animation: slideInFromLeft 5s ease forwards;
+
+}
+
+.product-details {
+  flex: 2;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-right: 30px;
+  height: 50vh;
+}
+
+.order-details {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: white; 
+  margin-left: 30px;
+  height: 650px;
+  margin-top: 95px;
+  padding: 20px;
+}
+
+.product-carousel {
+  display: flex;
+  justify-content: center; 
+}
+
+
+
+.carousel-image {
+  max-width: 100%; /* Ensure the carousel takes the full width of its container */
+  height: 100%; /* Ensure the carousel takes the full height of its container */
+  border-radius: 10px;
+  overflow: hidden; /* Hide any overflowing content */
+  justify-content: center;
+  align-items: center;
+  object-fit: fill;
+  z-index: -100;
+}
+.slide{
+  width: 100%; /* Ensure the carousel takes the full width of its container */
+  height: 600px; /* Ensure the carousel takes the full height of its container */
+  border-radius: 10px;
+  overflow: hidden; /* Hide any overflowing content */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.thumbs{
+  flex-direction: column;
+  padding: 0;
+  margin-top: 5px;
+
+}
+.banner{
+  width: 100%;
+  max-height: 100%;
+  height: 120vh;
+  border-radius: 10px;
+  flex: 1;
+  
+}
+.thumbs-wrapper {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+
+
+.order-details > div {
+  margin-bottom: 15px;
+}
+
+.order-details p {
+  margin: 5px 0;
+}
+
+.order-button {
+  flex: 1;
+  padding: 20px 30px;
+  background-color: #9d174d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: sticky;
+  top: 10px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+.contact-button {
+  flex: 1;
+  margin-left: 5px;
+  background-color: white;
+  padding: 20px 30px;
+  border: #9d174d 1px solid;
+  color: #9d174d ;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: sticky;
+  top: 10px;
+  border-radius: 30px;
+}
+
+
+.prices{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.naira-price{
+  font-weight: 1000;
+  margin: auto;
+  font-size: larger;
+}
+.variation{
+  font-weight: 700;
+}
+.select-variation{
+  display: flex;
+  justify-content: space-between;
+}
+.product-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product-table td, .product-table th {
+  border: 1px solid #dddddd; /* Add borders around each cell */
+  padding: 8px;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Add alternate row colors */
+}
+
+.product-table tr:hover {
+  background-color: #dddddd; /* Highlight row on hover */
+}
+
+.product-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.order-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.contact-button:hover{
+  background-color: #9d174d;
+  color: white;
+}
+.order-button:hover {
+background-color: white;  
+color: #9d174d;
+  border: 2px #9d174d solid;;
+}
+.banner2, .banner{
+  width: 100%;
+
+}
+.banners{
+  display:flex; 
+  width: 100%; 
+  margin: 60px 0 0 50px;
+  
+}
+.banner-images{
+  width:46vw;
+  padding: 0 10px;
+  height: auto;
+  max-height: 700px;
+  border-radius:20px;
+
+}
