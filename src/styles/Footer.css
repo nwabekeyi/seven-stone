@@ -1,0 +1,17 @@
+
+footer{
+    z-index: 1000 !important;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    padding: 2px;
+    height: 40px;
+}
+
+.footer-section {
+    transition: color 0.3s ease;
+    color: #f5c9dbb2 ;
+    
+}
+
+

@@ -1,0 +1,354 @@
+@media screen and (max-width: 768px) {
+  .contact, .about{
+    display: none;
+  }
+
+  .modal {
+    display: flex;
+    position: absolute;
+    top: 20vh !important;
+    left: 37vw !important;
+    width: 100px !important;
+    height: auto !important;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar-container {
+    background-color: #252B48;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 5rem;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    animation: slideInFromLeft 5s ease forwards;
+
+}
+}
+
+#navbar-container {
+    background-color: #252B48;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    animation: slideInFromLeft 5s ease forwards;
+
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.nav-linkS{
+  color:white;
+  text-decoration: none;
+}
+.company-logo{
+    display: flex;
+
+}
+
+#navbar-container h1 {
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-buttons{
+    margin: auto 0 auto 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-content{
+    display: flex;
+    flex:2;
+}
+
+.nav-buttons button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-wrap:nowrap ;
+}
+.nav-button:hover{
+  color:#9d174d !important;
+  background-color:#252B48;
+}
+
+.auth-button{
+  margin-right: 10px;
+}
+
+#sign-up, #sign-in {
+  padding: 10px 25px;
+    border-radius: 30px;
+    background-color: #9d174d;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 2px #9d174d solid;
+}
+#sign-up{
+  padding: 10px 25px;
+  border-radius: 30px;
+    margin-left: 10px;
+    background-color:#252B48;
+    border: 2px #9d174d solid;
+    color: white;
+    cursor: pointer;
+}
+ #sign-up:hover {
+  background-color: #9d174d;
+}
+#sign-in:hover{
+  background-color:#252B48;
+
+}
+
+
+
+
+
+
+#signin-cart {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+/* Add these styles to your Navbar.css file */
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 40vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Add specific styles for form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+button[type="submit"], button[type="button"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9d174d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #7a0e39;
+}
+button[type="button"]:hover {
+  background-color: #7a0e39;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.modal-title{
+  color:#9d174d;
+  text-align: center;
+}
+
+.burger-menu {
+  display: none; /* Initially hidden on larger screens */
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 30vh;
+  background-color: #252B48;
+  color: white;
+  z-index: 999;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: left;
+}
+.nav-link{
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.nav-buttons-small{
+  list-style-type: none;
+  padding-left: 10px;
+
+ }
+
+ .nav-link:active{
+  border: #9d174d 1px solid;
+  font-size: larger;
+ }
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-buttons {
+    display: none; /* Hide the original nav buttons */
+  }
+
+  .burger-menu {
+    display: block; /* Display the burger button on smaller screens */
+    position: absolute;
+    top: 2vh;
+    left: 3vw;
+    z-index: 1000;
+  }
+  
+
+#navbar-container {
+    background-color: #252B48;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    animation: slideInFromLeft 5s ease forwards;
+
+}
+#sign-up, #sign-in {
+ display: none;
+
+}
+#sign-upS, #sign-inS {
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: #9d174d;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  border: 2px #9d174d solid;
+  font-size:large;
+
+}
+#sign-upS{
+padding: 5px 8px;
+border-radius: 10px;
+  margin-left: 10px;
+  background-color:#252B48;
+  border: 2px #9d174d solid;
+  color: white;
+  cursor: pointer;
+  font-size:large;
+}
+#sign-upS:active {
+background-color: #9d174d;
+}
+#sign-inS:active{
+background-color:#252B48;
+
+}
+#navbar-container {
+  background-color: #252B48;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  animation: slideInFromLeft 5s ease forwards;
+
+}
+}
+
+.basket-icon{
+  margin-right:100px ;
+  color: white;
+  font-size: large;
+
+}
+.basket-icon:hover{
+  color:#9d174d;
+  transform: scale(1.2);
+}
+
+.logo{
+  cursor: pointer;
+  
+}
